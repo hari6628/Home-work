@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Program</title>
+</head>
+<body>
+
+    <h2 id="heading">Welcome to JavaScript</h2>
+
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+
+    <button onclick="calculate()">Add</button>
+
+    <p id="result"></p>
+
+    <script>
+
+        function calculate()
+        {
+            let text = document.getElementById("heading").innerText;
+            console.log(text);
+
+           
+            let a = document.getElementById("num1").value;
+            let b = document.getElementById("num2").value;
+
+           
+            a = Number(a);
+            b = Number(b);
+
+           
+            let sum = a + b;
+
+            
+            let result = document.getElementById("result");
+            result.innerText = "Result = " + sum;
+
+            
+            result.style.color = "blue";
+            result.style.fontSize = "25px";
+        }
+
+    </script>
+
+</body>
+</html>
+</body>
+</html>
